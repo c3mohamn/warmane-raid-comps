@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Guild } from '../models/guild.interface';
 import { warmaneApi } from 'src/app/constants/warmane-api.constant';
 import { environment } from 'src/environments/environment';
 import { Character } from '../models/character.interface';
@@ -20,8 +19,8 @@ export class WarmaneApiService {
    * @param name - Guild name
    * @param realm - Realm name
    */
-  getGuildInfo(name: string, realm: string): Observable<Guild> {
-    return this.http.get<Guild>(this.apiUrl + warmaneApi.GET_GUILD(name, realm));
+  getGuildInfo(name: string, realm: string): Observable<any> {
+    return this.http.get<any>(this.apiUrl + warmaneApi.GET_GUILD(name, realm));
   }
 
   /**
