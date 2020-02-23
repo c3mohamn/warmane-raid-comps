@@ -55,6 +55,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "./node_modules/bulma/css/bulma.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -123,6 +124,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "./node_modules/bulma/css/bulma.css",
               "src/styles.sass"
             ],
             "scripts": []
