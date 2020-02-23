@@ -1,4 +1,4 @@
 export const warmaneApi = {
-  CHARACTER: (name: string, realm: string) => `http://armory.warmane.com/api/character/${name}/${realm}/summary`,
-  GUILD: (name: string, realm: string) => `http://armory.warmane.com/api/guild/${name}/${realm}/summary`
+  GET_CHARACTER: (name: string, realm: string) => `/character/${name}/${realm}/summary`,
+  GET_GUILD: (name: string, realm: string) => `/guild/${name}/${realm}/summary`
 };
