@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  warmaneApiUrl: 'http://armory.warmane.com/api'
 };

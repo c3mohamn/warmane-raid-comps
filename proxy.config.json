@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "http://armory.warmane.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
