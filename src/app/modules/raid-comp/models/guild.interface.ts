@@ -1,4 +1,4 @@
-import { CharacterGuild, CharacterGuildLeader } from './character.interface';
+import { GuildMemberCharacter, GuildLeaderCharacter } from './character.interface';
 
 export interface Guild {
   name: string;
@@ -6,6 +6,6 @@ export interface Guild {
   faction: string;
   membercount: string;
   pvepoints: string;
-  leader: CharacterGuildLeader;
-  roster: CharacterGuild[];
+  leader: GuildLeaderCharacter;
+  roster: GuildMemberCharacter[];
 }

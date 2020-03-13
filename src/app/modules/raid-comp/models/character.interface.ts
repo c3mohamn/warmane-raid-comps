@@ -1,4 +1,4 @@
-export interface Character extends CharacterGuildLeader {
+export interface Character extends GuildLeaderCharacter {
   realm: string;
   faction: string;
   honorablekills: string;
@@ -16,13 +16,13 @@ export interface CharacterEquipment {
   transmog: string;
 }
 
-export interface CharacterGuild extends CharacterGuildLeader {
+export interface GuildMemberCharacter extends GuildLeaderCharacter {
   online: boolean;
   achievementpoints: string;
-  professions: CharacterProfessionsGuild;
+  professions: GuildMemberCharacterProfessions;
 }
 
-export interface CharacterGuildLeader {
+export interface GuildLeaderCharacter {
   name: string;
   level: string;
   gender: string;
@@ -37,7 +37,7 @@ export interface CharacterProfessions {
   skill: string;
 }
 
-export interface CharacterProfessionsGuild {
+export interface GuildMemberCharacterProfessions {
   professions: CharacterProfessions[];
 }
 

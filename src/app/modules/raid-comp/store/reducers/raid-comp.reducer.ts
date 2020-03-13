@@ -7,14 +7,14 @@ import { WarmaneApiError } from '../../models/error.interface';
 export interface RaidCompState {
   guild: Guild | null;
   raid: Raid | null;
-  availableChars: Character[];
+  substitutes: Character[];
   error: WarmaneApiError | null;
 }
 
 const initialState: RaidCompState = {
   guild: null,
   raid: null,
-  availableChars: [],
+  substitutes: [],
   error: null
 };
 

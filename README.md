@@ -1,6 +1,42 @@
 # WarmaneRaidsComp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3. Current version is 9.0.6.
+
+### Features
+
+- Raid comp interface
+
+  - Guild Container
+  - Pending Container?
+  - Substitutes Container
+  - Raid Container
+
+- Load Guild members from API
+- Add custom players (for players in external guild)
+  - Input Character Name & Realm -> attempts to use api to retrieve player data
+- Drag and drop players between containers
+- Export/Save?
+
+```
+ ----------------
+| Header         |
+ ----------------
+
+ Guild
+ ----------------
+|                |
+|                |
+ ----------------
+ Raid     Subs
+ --------   -----
+|        | |     |
+|        | |     |
+ --------   -----
+
+ ----------------
+| Footer         |
+ ----------------
+```
 
 ## Development server
 
